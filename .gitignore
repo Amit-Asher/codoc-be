@@ -1,0 +1,7 @@
+node_modules
+logs
+.env
+src/swagger/routes.ts
+src/swagger/swagger.json
+dist
+.get-k8s-config.txt

@@ -1,0 +1,28 @@
+{
+  "entryFile": "src/server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": [
+    "src/**/*controller.ts"
+  ],
+  "spec": {
+    "host": "asheramit.com",
+    "basePath": "/codoc",
+    "outputDirectory": "src/swagger",
+    "specVersion": 3
+  },
+  "routes": {
+    "basePath": "/",
+    "middleware": "express",
+    "routesDir": "src/swagger"
+  },
+  "compilerOptions": {
+    "paths": {
+      "customeModule": [
+        "./src/interfaces/*"
+      ]
+    }
+  },
+  "ignore": [
+    "**/node_modules/**"
+  ]
+}

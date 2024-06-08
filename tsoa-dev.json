@@ -1,0 +1,28 @@
+{
+  "entryFile": "src/server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": [
+    "src/**/*controller.ts"
+  ],
+  "spec": {
+    "basePath": "/",
+    "outputDirectory": "src/swagger",
+    "specVersion": 3,
+    "description": "links:\n- [The GitHub repository](https://github.com/Amit-Asher)"
+  },
+  "routes": {
+    "basePath": "/",
+    "middleware": "express",
+    "routesDir": "src/swagger"
+  },
+  "compilerOptions": {
+    "paths": {
+      "customeModule": [
+        "./src/interfaces/*"
+      ]
+    }
+  },
+  "ignore": [
+    "**/node_modules/**"
+  ]
+}
